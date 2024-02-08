@@ -1,12 +1,11 @@
-import { useState } from 'react';
+export const Options = ({ handleFeedback, resetFeedback, totalFeedback }) => {
+  return (
+    <div>
+      <button onClick={() => handleFeedback('good')}>Good</button>
+      <button onClick={() => handleFeedback('neutral')}>neutral</button>
+      <button onClick={() => handleFeedback('bad')}>bad</button>
 
-export const Options = ({ }) => {
-    const [feedback, setfeedback] = useState(0)
-    
-
-return <div>
-    <button>Good</button>;
-    <button>Neutral</button>;
-    <button>Bad</button>;
-</div>;
+      {totalFeedback === 0 ? <></> : <button onClick={resetFeedback}>Reset</button>}
+    </div>
+  );
 };
