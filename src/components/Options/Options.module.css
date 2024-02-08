@@ -1,0 +1,16 @@
+
+handleFeedback, resetFeedback, totalFeedback
+    .button {
+        min-width: 100px;
+        font-family: inherit;
+        margin: 2px 0;
+        padding: 8px 16px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+   
+    
+    .button:hover {
+        background-color:#002ead;
+        transition: 0.7s;
+    }
