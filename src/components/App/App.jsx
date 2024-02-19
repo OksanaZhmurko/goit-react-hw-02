@@ -32,7 +32,7 @@ export const App = () => {
   return (
     <div>
       <Description />
-      <Options  handleFeedback={handleFeedback} resetFeedback={resetFeedback} />
+      <Options  handleFeedback={handleFeedback} resetFeedback={resetFeedback} totalFeedback={totalFeedback}/>
       {totalFeedback === 0 ? (
         <Notification />
       ) : (

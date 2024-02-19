@@ -1,4 +1,5 @@
 export const Options = ({ handleFeedback, resetFeedback, totalFeedback }) => {
+
   return (
     <div>
       <button onClick={() => handleFeedback('good')}>Good</button>
